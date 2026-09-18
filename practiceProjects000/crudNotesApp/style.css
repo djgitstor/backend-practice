@@ -1,0 +1,54 @@
+*{
+    background-color: rgb(28, 32, 52);
+    color: wheat;
+    font-family: sans-serif;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    
+}
+.navLinks{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+
+}
+.noteForm{
+    width: 80%;
+    margin: 0 auto;
+}
+.noteForm form{
+    display: flex;
+    flex-direction: column;
+}
+
+#notesContainer{
+    border: 1px solid white;
+    border-radius: 2vh;
+    box-shadow: inset;
+    margin: auto;
+    padding: 20px;
+    width: 90vw;
+    height: max-content;
+    min-height: 80vh;
+}
+.noteCard{
+    background-color: rgb(157, 84, 84, 10%);
+    width: 27vw;
+    min-height: 10vw;
+    max-height: max-content;
+    border: 1px solid white;
+    border-radius: 2vh;
+    padding: 10px;
+
+}
+.notActions{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}

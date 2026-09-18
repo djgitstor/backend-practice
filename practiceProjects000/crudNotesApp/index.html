@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="navBar">
+        <div>Logo</div>
+        <ul class="navLinks">
+            <li>Home</li>
+            <li>Notes</li>
+            <li>Services</li>
+        </ul>
+        <div class="profileIcon">Profile</div>
+    </nav>
+    <main>
+        <div class="noteForm">
+            <div class="flex w-[100%] items-center justify-center bg-gray-900 p-4">
+  <form class="w-full max-w-md rounded-xl bg-gray-800 p-6 shadow-lg border border-gray-700">
+    
+    <!-- Title Field -->
+    <div class="mb-4">
+      <label class="mb-2 block text-sm font-medium text-gray-200" for="noteTitle">Note Title</label>
+      <input 
+        type="text" 
+        id="noteTitle" 
+        placeholder="Enter note title..." 
+        class="w-full rounded-lg border border-gray-600 bg-gray-700 p-2.5 text-sm text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+      />
+    </div>
+
+    <!-- Content Field -->
+    <div class="mb-4">
+      <label class="mb-2 block text-sm font-medium text-gray-200" for="noteContent">Note Content</label>
+      <textarea 
+        id="noteContent" 
+        rows="4" 
+        placeholder="Write your note here..." 
+        class="w-full rounded-lg border border-gray-600 bg-gray-700 p-2.5 text-sm text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+      ></textarea>
+    </div>
+
+    <!-- Submit Button -->
+    <button 
+      type="submit" 
+      class="w-full rounded-lg bg-blue-600 px-5 py-2.5 text-center text-sm font-medium text-white transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+    >
+      Add Note
+    </button>
+
+  </form>
+</div>
+        </div>
+        <div id="notesContainer">
+            <div class="noteCard">
+                <div class="title">
+                    <h3>NoteTitle</h3>
+                </div>
+                <div class="noteContent">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ex quaerat sit. Similique nesciunt deleniti possimus vero distinctio cum ipsam necessitatibus, sit ab eveniet voluptates aspernatur tempora minima unde laudantium libero doloremque.</p>
+                </div>
+                <div class="notActions">
+                    <buttons>Like</buttons>
+                    <buttons>Delete</buttons>
+                    <buttons>More</buttons>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

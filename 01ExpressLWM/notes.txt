@@ -1,0 +1,34 @@
+figlet package to create bigg latters in console
+express - express is a framework for nodejs
+express use case => routing
+routing => {
+    "Disc":routing is to navigate different sublinks like "/profile" etc
+    "main routs": {GET POST},
+    "others routs": {PUT PATCH DELETE}
+    }
+nodemon = > {
+    Disc : used to auto refresh server after every changes save,
+    install : npm install nodemon -g // use -g to install nodemon globaly
+    error : if system says script disabled then use npx like "npx nodemon filename.js"
+}
+midleware => {
+    Disc : {
+        exprlain:"midleware ek aisa function hai jo kisi bhi route se pehle chalta hai, matlab agar route chalne se pehle koi kaam karana ho to midleware ka upyog kiya ja sakta hai",
+
+        jaise : ["route chalne se pehle console me kuch print karna" , "rout chalne se pehle rout hits ki value badhani"]
+
+        dikkat1 : "midle chalne par request jam ho jaati thi midleware se aage nahi badhti thi",
+
+        solution1 : "isse tackle karne ke liye hum next() function ko run karte hain jo hum function ke attribute ke sath pass karte hain",
+
+        syntax : "app.use(function(req,res,next){
+                    console.log('Code');
+                    next();
+                    })"
+
+        Quistion1 : kitne midleware bana sakte hain ,
+        ans :  'kitne bhi ! ["agar multiple midlewares hain to next() function se hum rout ki jagah agle midleware par jayenge" ]'
+    } 
+}
+
+1:44 video timestamp -- Finished

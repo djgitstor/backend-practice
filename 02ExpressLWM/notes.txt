@@ -1,0 +1,57 @@
+--- Express.js - Learn What Matters: Mastering the Framework | Backend (Node JS) Series ---
+https://www.youtube.com/watch?v=pKJ4GGyDgJo&list=PL92rin1bGHEyqnAWgmIZmL0DmIxWq249F
+
+
+
+req,res
+req me request ka sara data hota hai jo userki taraf se aayi hai
+res me data nahi sara code hota hai server se bhejne ke liye
+
+--- Dynamic Routing (Express.js) ---
+
+Dynamic routing tab use hoti hai jab URL ka ek hissa static (fixed) rehta hai aur dusra hissa dynamically change hota rehta hai (jaise alag-alag users, products ya IDs ke liye).
+
+Har naye user ke liye alag route likhne ke bajaye (jaise /profile/rahul, /profile/amit), hum URL ke badalne wale part ko ek variable bana dete hain.
+
+Core Concept: Route Parameters (:)
+URL path me kisi bhi segment ke aage colon (:) lagane se Express use dynamic parameter maan leta hai:
+
+Static Route: /profile/user1 (Sirf user1 ke liye chalega)
+
+Dynamic Route: /profile/:username (URL me username ki jagah jo bhi aayega, use (req.params.username) me capture kar lega)
+
+Browser se jo bhi request jayegi vo req me jayegi or :username ko ( req.params.username ) se access kar sakte hain
+
+-- Templete engine --
+Disc => 
+
+-- ejs --
+html me calculation nahi ho sakti lekin ejs html jaisa hi hai bas iske calculation kar sakta hai
+
+Templete engines => pug,handlebars, ejs, jade
+
+ejs setup steps:- we'll use ejs  because it looks like html
+
+    1. ejs install
+        npm i ejs
+    2. configure ejs
+        app.set("view engine","ejs")
+    3. ek views naam se folder banao
+    4. usme .ejs files banao (is file me Normal Html hi hoga)
+    5. send ki jagah render karo => render karte time views folder ke andar wali kisi file ka naa hi likhna hai or usme .ejs attact nahi karta
+
+Static Files :-
+    Images , Stylesheets , FrontEnd JavaScript Setup karna...
+Static files ko setup karne ke liye Do These Things :-
+    1. Create a folder called public
+    2. Create 3 folders inside public folder > images , Stylesheets , javascripts
+    3. configure the Express static in script.js file
+        app.use(express.static("./public"))
+    4. Understand The path
+        path se /public name hatta dena hai yeh apne aap add ho jaata haiS
+
+-- Error Handling --
+need to learn little bit
+
+
+---   Video Finished    ---
